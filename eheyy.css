@@ -60,6 +60,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7), 
+                0 0 10px rgba(255, 255, 255, 0.8); /* Added glow effect */
+    animation: glow 1.5s infinite alternate;
   }
   
   .profile-image img {
@@ -189,8 +192,7 @@ body {
     border-radius: 50%;
     background: radial-gradient(circle, rgba(255, 221, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
     box-shadow: 0 0 20px rgba(255, 221, 0, 0.8), 0 0 40px rgba(0, 0, 0, 0.6);
-    pointer-events: none; /* Ensures it doesn't block interactions */
-    mix-blend-mode: lighten; /* Blends naturally over backgrounds */
+   
     transition: transform 0.05s linear; /* Smooth movement */
     z-index: 9999; /* Ensures it stays above other elements */
 }
